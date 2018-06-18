@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="database" class="_17.spring.autowired.Database">
+		<property name="url" value="localhost8080"/>
+		<property name="userName" value="can"/>
+		<property name="password" value="123456"/>
+	</bean>
+ 	
+ 	<bean id="dbConnection" class="_17.spring.autowired.DBConnection"/>
+ 	
+ 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+</beans>
